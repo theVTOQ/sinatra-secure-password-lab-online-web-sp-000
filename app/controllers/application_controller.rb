@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
     #your code here
     username = params[:username]
     password = params[:password]
-    
+
     user = User.new(username: username, password: password)
 
     if user.save && username != "" && password != ""
